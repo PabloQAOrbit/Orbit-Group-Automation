@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://scorecardtest.k8s.og.local/login?returnTo=%2Fscorecards%2Fme",
+  "defaulCommandTimeout": 20000,
+  "pageLoadTimeout": 15000,
+  "ignoreTestFiles": ["*.js", "*.md"]
+}
