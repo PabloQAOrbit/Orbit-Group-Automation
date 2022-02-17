@@ -1,6 +1,6 @@
 {
-  "baseUrl": "https://scorecardtest.k8s.og.local/login?returnTo=%2Fscorecards%2Fme",
-  "defaulCommandTimeout": 20000,
-  "pageLoadTimeout": 15000,
+  "baseUrl": "https://coachingtest.k8s.og.local/pulse",
+  "defaulCommandTimeout": 25000,
+  "pageLoadTimeout": 20000,
   "ignoreTestFiles": ["*.js", "*.md"]
 }

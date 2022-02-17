@@ -12,4 +12,10 @@ function clickOn(element) {
   cy.get(selector[element]).click();
 }
 
-module.exports = { typeData, clickOn };
+function login() {
+  cy.get("#username").type("Orbit Felix");
+  cy.get("#password").type("orbit");
+  cy.get(":nth-child(2) > .btn").click();
+}
+
+module.exports = { typeData, clickOn, login };

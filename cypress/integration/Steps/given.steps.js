@@ -1,5 +1,6 @@
 import { Given } from "cypress-cucumber-preprocessor/steps";
+import { login } from "../Pages/loginPage";
 
-Given("the user open page", () => {
+Given("I open page", () => {
   cy.visit("/");
 });

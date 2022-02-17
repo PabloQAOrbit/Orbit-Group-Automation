@@ -15,7 +15,7 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "cypress/integration/Steps"
+    "stepDefinitions": "cypress/integration/steps"
   },
   "dependencies": {
     "tree": "^0.1.3"

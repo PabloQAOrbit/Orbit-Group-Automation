@@ -1,4 +1,10 @@
 {
-  "username": "",
-  "password": ""
+  "regression": {
+    "username": "",
+    "password": ""
+  },
+  "sanity": {
+    "username": "",
+    "password": ""
+  }
 }
