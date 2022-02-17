@@ -2,5 +2,7 @@
   "baseUrl": "https://coachingtest.k8s.og.local/pulse",
   "defaulCommandTimeout": 25000,
   "pageLoadTimeout": 20000,
-  "ignoreTestFiles": ["*.js", "*.md"]
+  "ignoreTestFiles": ["*.js", "*.md"],
+  "viewportWidth": 1280,
+  "viewportHeight": 720
 }

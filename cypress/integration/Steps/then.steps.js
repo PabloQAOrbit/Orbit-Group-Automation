@@ -1,6 +1,6 @@
 import { Then } from "cypress-cucumber-preprocessor/steps";
 import {
-  homepageVerification,
+  homePageVerification,
   oaVerification,
   navPerformersVerification,
   oaScoreVerification,
@@ -10,10 +10,14 @@ import {
   gearPeopleVerification,
   nonKpiVerification,
   visibilityIconsVerification,
+  nonKpiInformationVerification,
+  nonKpiMouseHover,
+  nonKpisccVerification,
+  logoutVerification,
 } from "../Pages/homePage";
 
 Then("I verify I am on Pulse page", () => {
-  homepageVerification();
+  homePageVerification();
 });
 
 Then("I verify, if OA Widget and diplay the 30 day rolling range", () => {
@@ -49,5 +53,33 @@ Then(
   "I verify, if the visibility icon is displayed on the Column header to hide column",
   () => {
     visibilityIconsVerification();
+  }
+);
+
+Then(
+  "I verify, if Non KPI Commitments are displayed in the form of a button with the count / number",
+  () => {
+    nonKpiInformationVerification();
+  }
+);
+
+Then(
+  "I verify, if Commitment Focus - Behaviour and Sub-Behaviour associated to the commitment should be displayed",
+  () => {
+    nonKpiMouseHover();
+  }
+);
+
+Then(
+  "I Verify, if Pillar view should be displayed with Non KPI section section in expanded state with list of all commitments",
+  () => {
+    nonKpisccVerification();
+  }
+);
+
+Then(
+  "I click on profile button and I click on logout button, I verify, if I´m in login page",
+  () => {
+    logoutVerification();
   }
 );

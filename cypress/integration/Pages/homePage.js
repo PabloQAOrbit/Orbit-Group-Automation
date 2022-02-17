@@ -8,15 +8,26 @@ const filter = ".oa-add-filter-sec > h1";
 const pilar = ".oa-add-remove-secs.oa-add-remove-sec-1 > h1";
 const people = ".oa-add-remove-sec-2 > h1";
 const visibilityIcon = ".team-oa-header-icons";
+const nonKpiInformation = ".nonkpi-button";
+const nonKpisection = ".perf-tabs-container";
+const profile = ".d-none";
+const logoutButton = '[routerlink="/logout"]';
+const loginIcon = ".h5";
 
 const selector = {
   gear: "button.btn.filter-button",
-  non_kpi: ":nth-child(5) > .custom-control > .custom-control-label",
+  non_kpi: ".custom-checkbox",
   closeX: ".arrow_box > .close",
 };
 
 function clickButton(element) {
-  cy.get(selector[element], { timeout: 20000 }).click();
+  if (element.includes("non_kpi")) {
+    cy.get(selector[element], { timeout: 20000 })
+      .contains("Non-KPI")
+      .click({ force: true });
+  } else {
+    cy.get(selector[element], { timeout: 20000 }).click();
+  }
 }
 
 function homePageVerification() {
@@ -79,9 +90,35 @@ function nonKpiVerification() {
 function visibilityIconsVerification() {
   cy.get(visibilityIcon, { timeout: 25000 }).should("be.visible");
 }
+function nonKpiInformationVerification() {
+  cy.get(nonKpiInformation).should("be.visible");
+}
+
+function nonKpiMouseHover() {
+  cy.get(nonKpiInformation).then(($elements) => {
+    cy.wrap($elements[2]).trigger("mouseover", { force: true });
+    cy.get(".custom-tooltip.nonkpitooltip").should("be.visible");
+  });
+}
+
+function openNonKpi() {
+  cy.get(nonKpiInformation).then(($elements) => {
+    cy.wrap($elements[2]).click({ force: true });
+  });
+}
+
+function nonKpisccVerification() {
+  cy.get(nonKpisection).contains("Current Commitments").should("be.visible");
+}
+
+function logoutVerification() {
+  cy.get(profile).click();
+  cy.get(logoutButton).click();
+  cy.get(loginIcon).contains("LOGIN").should("be.visible");
+}
 
 module.exports = {
-  homepageVerification,
+  homePageVerification,
   oaVerification,
   navPerformersVerification,
   oaScoreVerification,
@@ -92,4 +129,9 @@ module.exports = {
   gearPeopleVerification,
   nonKpiVerification,
   visibilityIconsVerification,
+  nonKpiInformationVerification,
+  nonKpiMouseHover,
+  openNonKpi,
+  nonKpisccVerification,
+  logoutVerification,
 };
