@@ -31,33 +31,59 @@ Create reports
 ## Structure
 
 - .gitignore
+
   | cypress.json
+
   | package-lock.json
+
   | package.json
+
   | README.md
   |  
   +---cypress
+
   | +---fixtures
+
   | | user.json
-  | |  
+
+  | |
+
   | +---integration
+
   | | +---feature
+
   | | | coaching_regression_9903.feature
-  | | |  
+
+  | | |
+
   | | +---pages
+
   | | | homePage.js
+
   | | | loginPage.js
-  | | |  
+
+  | | |
+
   | | \---steps
+
   | | given.steps.js
+
   | | then.steps.js
+
   | | when.steps.js
-  | |  
+
+  | |
+
   | +---plugins
+
   | | index.js
-  | |  
+
+  | |
+
   | \---support
+
   | commands.js
+
   | index.js
 
 ## About this
