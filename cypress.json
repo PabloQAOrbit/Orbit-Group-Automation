@@ -4,5 +4,6 @@
   "pageLoadTimeout": 20000,
   "ignoreTestFiles": ["*.js", "*.md"],
   "viewportWidth": 1280,
-  "viewportHeight": 720
+  "viewportHeight": 720,
+  "video": false
 }

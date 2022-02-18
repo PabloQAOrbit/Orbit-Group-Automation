@@ -6,9 +6,26 @@
 npm install
 ```
 
+Install dependencies
+
 ```bash
 npm run cy:open
 ```
+
+click on .feature file
+Cypress Open
+
+```bash
+npm run cy:run
+```
+
+Cypress run and create reports
+
+```bash
+npm run cy:generate:report
+```
+
+Create reports
 
 click on .feature file
 
@@ -16,7 +33,6 @@ click on .feature file
 
 - .gitignore
   | cypress.json
-  | output.txt
   | package-lock.json
   | package.json
   | README.md
