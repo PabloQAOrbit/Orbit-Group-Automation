@@ -13,6 +13,7 @@ npm run cy:open
 ```
 
 click on .feature file
+
 Cypress Open
 
 ```bash
@@ -26,8 +27,6 @@ npm run cy:generate:report
 ```
 
 Create reports
-
-click on .feature file
 
 ## Structure
 
