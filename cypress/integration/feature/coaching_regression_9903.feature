@@ -2,7 +2,7 @@ Feature:  OA - Validate the information displayed when click on the Opportunity 
 
 Scenario: Validate if user is able to login into Pulse
   Given I open page
-  When I type "Orbit Felix" in "username"
+  When I type "Kevin Wright" in "username"
   And I type "orbit" in "password"
   And I click on "login" button
   Then I verify I am on Pulse page

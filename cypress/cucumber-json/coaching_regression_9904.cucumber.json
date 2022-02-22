@@ -1,0 +1,482 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "OA - Validate Missed opportunities column is not displayed on default view if there are no Opportunities to display",
+    "line": 1,
+    "id": "oa---validate-missed-opportunities-column-is-not-displayed-on-default-view-if-there-are-no-opportunities-to-display",
+    "tags": [],
+    "uri": "coaching_regression_9904.feature",
+    "elements": [
+      {
+        "id": "oa---validate-missed-opportunities-column-is-not-displayed-on-default-view-if-there-are-no-opportunities-to-display;validate-if-user-is-able-to-login-into-pulse",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate if user is able to login into Pulse",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open page",
+            "result": {
+              "status": "passed",
+              "duration": 7987000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I type \"Kevin Wright\" in \"username\"",
+            "result": {
+              "status": "passed",
+              "duration": 1595000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I type \"orbit\" in \"password\"",
+            "result": {
+              "status": "passed",
+              "duration": 409000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click on \"login\" button",
+            "result": {
+              "status": "passed",
+              "duration": 286000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I verify I am on Pulse page",
+            "result": {
+              "status": "passed",
+              "duration": 3786000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "oa---validate-missed-opportunities-column-is-not-displayed-on-default-view-if-there-are-no-opportunities-to-display;validate-if-the-oa-widget-is-present",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Validate if the OA Widget is present",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I open page",
+            "result": {
+              "status": "passed",
+              "duration": 3480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I am login in page",
+            "result": {
+              "status": "passed",
+              "duration": 1975000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I verify, if OA Widget and diplay the 30 day rolling range",
+            "result": {
+              "status": "passed",
+              "duration": 6209000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "oa---validate-missed-opportunities-column-is-not-displayed-on-default-view-if-there-are-no-opportunities-to-display;validate-if-columns-are-displayed-on-the-widget",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Validate if columns are displayed on the widget",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I open page",
+            "result": {
+              "status": "passed",
+              "duration": 2354000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I am login in page",
+            "result": {
+              "status": "passed",
+              "duration": 2141000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I verify, if the column with self, team and others are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 20656000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I Verify, if the OA score are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I Verify, if All Opportunities Options: Coached, Uncoached and Missed are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 413000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "oa---validate-missed-opportunities-column-is-not-displayed-on-default-view-if-there-are-no-opportunities-to-display;validate-if-clicking-the-gear-icon-the-user-can-see-the-filter-options",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Validate if clicking the gear icon the user can see the filter options",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I open page",
+            "result": {
+              "status": "passed",
+              "duration": 1074000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I am login in page",
+            "result": {
+              "status": "passed",
+              "duration": 1768000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I click on \"gear\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 8076000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I Verify, the Filter,Columns, People are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "oa---validate-missed-opportunities-column-is-not-displayed-on-default-view-if-there-are-no-opportunities-to-display;validate-if-i-login-as-user-without-missed-opportunities-the-column-and-the-checkbox-is-for-default-is-unchecked",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Validate if I login as user without missed opportunities the column and the checkbox is for default is unchecked",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I open page",
+            "result": {
+              "status": "passed",
+              "duration": 1363000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I am login as Cornnie",
+            "result": {
+              "status": "passed",
+              "duration": 2184000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I click on \"gear\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 6562000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I verify the Missed opportunities no is checked by default",
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "oa---validate-missed-opportunities-column-is-not-displayed-on-default-view-if-there-are-no-opportunities-to-display;validate-if-i-login-as-user-without-missed-opportunities-and-i-check-this-and-missed-opportunities-column-is-displayed",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Validate if I login as user without missed opportunities and I check this and Missed opportunities column is displayed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "I open page",
+            "result": {
+              "status": "passed",
+              "duration": 561000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "I am login as Cornnie",
+            "result": {
+              "status": "passed",
+              "duration": 1803000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I click on \"gear\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 5698000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I click on \"Missed opportunities\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I click on \"closeX\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 716000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I verify, if the Missed opportunities column is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "oa---validate-missed-opportunities-column-is-not-displayed-on-default-view-if-there-are-no-opportunities-to-display;validate-if-the-missed-opportunities-column-is-displayed-but-empty",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Validate if the missed opportunities column is displayed but empty",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "I open page",
+            "result": {
+              "status": "passed",
+              "duration": 577000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I am login as Cornnie",
+            "result": {
+              "status": "passed",
+              "duration": 1944000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "I click on \"gear\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 5337000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "I click on \"Missed opportunities\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 612000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "I click on \"closeX\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 604000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "I verify, if the Missed opportunities column is empty",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "oa---validate-missed-opportunities-column-is-not-displayed-on-default-view-if-there-are-no-opportunities-to-display;validate-sign-out-from-the-application",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "Validate Sign out from the application",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 51,
+            "name": "I open page",
+            "result": {
+              "status": "passed",
+              "duration": 870000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "I am login as Cornnie",
+            "result": {
+              "status": "passed",
+              "duration": 1992000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "I click on \"gear\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 5616000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "I click on \"Missed opportunities\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 638000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "I click on \"closeX\" Button",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "I click on profile button and I click on logout button, I verify, if I´m in login page",
+            "result": {
+              "status": "passed",
+              "duration": 991000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

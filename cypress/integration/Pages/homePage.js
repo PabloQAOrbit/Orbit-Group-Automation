@@ -13,11 +13,13 @@ const nonKpisection = ".perf-tabs-container";
 const profile = ".d-none";
 const logoutButton = '[routerlink="/logout"]';
 const loginIcon = ".h5";
+const unchecked = '[for="togglecolMissed Opportunities"]';
 
 const selector = {
   gear: "button.btn.filter-button",
   non_kpi: ".custom-checkbox",
   closeX: ".arrow_box > .close",
+  "Missed opportunities": '[for="togglecolMissed Opportunities"]',
 };
 
 function clickButton(element) {
@@ -112,9 +114,21 @@ function nonKpisccVerification() {
 }
 
 function logoutVerification() {
-  cy.get(profile).click();
+  cy.get(profile).click({ force: true });
   cy.get(logoutButton).click();
   cy.get(loginIcon).contains("LOGIN").should("be.visible");
+}
+
+function missedUncheckedVerification() {
+  cy.get(unchecked).contains("Missed Opportunities").should("not.be.checked");
+}
+
+function missedOppVerification() {
+  cy.get(coachOpp).contains("Missed Opportunities").should("be.visible");
+}
+
+function missedOppEmptyVerification() {
+  cy.get(".member-missed").should("be.empty");
 }
 
 module.exports = {
@@ -134,4 +148,7 @@ module.exports = {
   openNonKpi,
   nonKpisccVerification,
   logoutVerification,
+  missedUncheckedVerification,
+  missedOppVerification,
+  missedOppEmptyVerification,
 };

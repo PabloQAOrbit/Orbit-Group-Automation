@@ -14,6 +14,9 @@ import {
   nonKpiMouseHover,
   nonKpisccVerification,
   logoutVerification,
+  missedUncheckedVerification,
+  missedOppVerification,
+  missedOppEmptyVerification,
 } from "../Pages/homePage";
 
 Then("I verify I am on Pulse page", () => {
@@ -83,3 +86,15 @@ Then(
     logoutVerification();
   }
 );
+
+Then("I verify the Missed opportunities no is checked by default", () => {
+  missedUncheckedVerification();
+});
+
+Then("I verify, if the Missed opportunities column is displayed", () => {
+  missedOppVerification();
+});
+
+Then("I verify, if the Missed opportunities column is empty", () => {
+  missedOppEmptyVerification();
+});

@@ -13,9 +13,14 @@ function clickOn(element) {
 }
 
 function login() {
-  cy.get("#username").type("Orbit Felix");
+  cy.get("#username").type("Kevin Wright");
   cy.get("#password").type("orbit");
   cy.get(":nth-child(2) > .btn").click();
 }
 
-module.exports = { typeData, clickOn, login };
+function cornnieLogin() {
+  cy.get("#username").type("Connie Vrettos");
+  cy.get("#password").type("orbit");
+  cy.get(":nth-child(2) > .btn").click();
+}
+module.exports = { typeData, clickOn, login, cornnieLogin };

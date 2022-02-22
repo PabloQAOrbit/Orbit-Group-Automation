@@ -1,5 +1,5 @@
 import { When } from "cypress-cucumber-preprocessor/steps";
-import { typeData, clickOn, login } from "../Pages/loginPage";
+import { typeData, clickOn, login, cornnieLogin } from "../Pages/loginPage";
 import { clickButton, openNonKpi } from "../Pages/homePage";
 
 When("I type {string} in {string}", (data, element) => {
@@ -20,4 +20,8 @@ When("I click on {string} Button", (element) => {
 
 When("I click on Non-KPI button", () => {
   openNonKpi();
+});
+
+When("I am login as Cornnie", () => {
+  cornnieLogin();
 });
